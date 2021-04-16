@@ -89,6 +89,7 @@ luafile $HOME/.config/nvim/before/telescope.lua
 
 source  $HOME/.config/nvim/coc/coc.vim
 source  $HOME/.config/nvim/coc/coc-snippets.vim
+luafile $HOME/.config/nvim/plug-config/treesitter.lua
 
 "source  $HOME/.config/nvim/lsp-config/lsp-config.vim
 "luafile $HOME/.config/nvim/lsp-config/compe.lua
