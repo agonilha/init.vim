@@ -67,7 +67,7 @@ call plug#begin('~/.config/nvim/plugged')
 call plug#end()
 
 colorscheme onedark
-"highlight Normal guibg=none
+highlight Normal guibg=none
 let g:lightline = {
 	\'colorscheme':'onedark',
 	\}
@@ -80,17 +80,18 @@ autocmd BufWritePre * %s/\s\+$//e
 " SOURCES
 
 "source $HOME/.config/nvim/plug-config/
-source  $HOME/.config/nvim/before/auto-pairs.vim
-source  $HOME/.config/nvim/before/lightline.vim
-source  $HOME/.config/nvim/before/nerdcommenter.vim
-source  $HOME/.config/nvim/before/rainbow.vim
-luafile $HOME/.config/nvim/before/telescope.lua
+source  $HOME/.config/nvim/plug-config/rainbow.vim
 
 
 source  $HOME/.config/nvim/coc/coc.vim
 source  $HOME/.config/nvim/coc/coc-snippets.vim
 luafile $HOME/.config/nvim/plug-config/treesitter.lua
 
+
+source  $HOME/.config/nvim/before/auto-pairs.vim
+source  $HOME/.config/nvim/before/lightline.vim
+source  $HOME/.config/nvim/before/nerdcommenter.vim
+luafile $HOME/.config/nvim/before/telescope.lua
 "source  $HOME/.config/nvim/lsp-config/lsp-config.vim
 "luafile $HOME/.config/nvim/lsp-config/compe.lua
 "luafile $HOME/.config/nvim/lsp-config/lspsaga.lua
