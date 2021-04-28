@@ -21,13 +21,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'itchyny/lightline.vim'
 	Plug 'mengelbrecht/lightline-bufferline'
-	"" Plug 'nvim-telescope/telescope.nvim'
 	Plug 'mbbill/undotree'
-	"" Plug 'mattn/emmet-vim'
-	"" Plug 'metakirby5/codi.vim'
-
-	"" Configured, but I want to change something
-	"Plug 'justinmk/vim-sneak'
+	Plug 'junegunn/goyo.vim'
 
 	"" Already configured
 
@@ -39,7 +34,7 @@ call plug#begin('~/.config/nvim/plugged')
 	"Plug 'mhartington/oceanic-next'
 
     " NERDTree
-	"Plug 'ryanoasis/vim-devicons'
+	Plug 'ryanoasis/vim-devicons'
 
     " Statusline
 
@@ -62,6 +57,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
+	Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
 
 call plug#end()
@@ -106,3 +102,6 @@ luafile $HOME/.config/nvim/before/telescope.lua
 "luafile $HOME/.config/nvim/plug-config/treesitter.lua
 "luafile $HOME/.config/nvim/plug-config/lsp-config.lua
 "luafile $HOME/.config/nvim/plug-config/compe.lua
+
+
+let g:goyo_linenr=1
